@@ -31,28 +31,28 @@
     <main class="contenido-principal contenedor ">
         <h2 class="text-center">Contacto</h2>
 
-        <form class="formulario">
+        <form class="formulario" name="contacto" method="post" data-netlify="true">
             <fieldset>
                 <legend>Tus Datos</legend>
                 
                 <div class="campo">
                     <label for="nombre">Nombre: </label>
-                    <input  id="nombre" type="text" placeholder="Tu Nombre" required>
+                    <input  id="nombre" type="text" placeholder="Tu Nombre" name="nombre" required >
                 </div>
 
                 <div class="campo">
                     <label for="asunto">Asunto:</label>
-                    <input id="asunto" type="text" placeholder="Tu Asunto"  required>
+                    <input id="asunto" type="text" placeholder="Tu Asunto" name="asunto" required>
                 </div>
 
                 <div class="campo">
                     <label for="email">E-mail:</label>
-                    <input id="email" type="email" placeholder="Tu Email" >
+                    <input id="email" type="email" placeholder="Tu Email" name="email" >
                 </div>
 
                 <div class="campo">
                     <label for="tel">Teléfono:</label>
-                    <input id="tel" type="tel" placeholder="Tu Teléfono" >
+                    <input id="tel" type="tel" placeholder="Tu Teléfono" name="telefono">
                 </div>
 
                 <div class="campo">
