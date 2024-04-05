@@ -124,6 +124,51 @@ img {
     height: 25rem;
 }
 
+
+
+/* ESTILOS CARRUCEL */
+
+body { margin: 0; } 
+div#slider { overflow: hidden; } /* las imágenes no van a salir del márgen de la pantalla*/
+div#slider figure img { width: 20%; float: left; }
+
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; /*el movimiento se va a mantener de forma indefinida -infinito-*/
+}
+
+
+/*esta parte del código define el movimiento de las imágenes a la izquierda*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+.imgslider {
+    max-width: 1000rem;
+    /* display: block; */
+}
+
+
+
+/* TERMINO ESTILOS CARRUCEL */
+
+
+
+
+
 @media (min-width: 768px) { 
     .hero {
         height: 55rem;
@@ -474,3 +519,5 @@ img.btn-whatsapp:hover{
     box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
     transition-duration: 1s;
     } 
+
+ 
