@@ -29,7 +29,7 @@ h1,
 h2, 
 h3 {
     font-family: 'Playfair Display', serif;
-    margin: 0 0 2rem 0;
+    /* margin: 0 0 2rem 0; */
 }
 h1 {
     font-size: 3.8rem;
@@ -60,9 +60,12 @@ a {
     text-decoration: none;
     /* color: #000; */
 }
+
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+ 
 }
 img {
     max-width: 100%;
@@ -96,6 +99,10 @@ img {
 /** Utilidades */
 .text-center {
     text-align: center;
+    margin: 2.5rem;
+ 
+
+   
 }
 
 @media (min-width: 768px) { 
@@ -107,12 +114,23 @@ img {
 
 /** Header y Navegacion **/
 .nombre-sitio {
-    margin-top: 5rem;
-    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     color: var(--verdeOscuro);
+
 }
 .nombre-sitio span {
     color: var(--verdeClaro);
+}
+
+.nombre-sitio img{
+
+    max-width: 100%;
+   
+
 }
 
 
@@ -239,6 +257,14 @@ div#slider figure {
 }
 .categoria img {
     width: 100%;
+    
+    border-radius:1.5rem ;
+
+    /* border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0 ; */
+    /* border-top: 10rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; */
 }
 .categoria a {
     text-align: center;
@@ -246,12 +272,16 @@ div#slider figure {
     padding: 2rem;
     font-size: 2rem;
     color: var(--verdeOscuro);
+
 }
 .categoria a:hover {
-    background-color: var(--verdeClaro);
-    color: var(--beige);
-    /* border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem ; */
+    /* background-color: var(--verdeClaro); */
+    color: var(--verdeOscuro);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem ;
+    /* border-color: var(--verdeClaro); */
+    /* border-radius: .5rem; */
+ 
    
 }
 @media (min-width: 768px) { 
@@ -329,7 +359,7 @@ div#slider figure {
 
 /** Listado de Productos **/
 .contenido-principal {
-    padding-top: 5rem;
+    /* padding-top: 1rem; */
 }
 @media (min-width: 768px) { 
     .listado-productos {
