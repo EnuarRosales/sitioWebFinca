@@ -73,19 +73,20 @@ img {
 }
 
 .btn {
-    background-color: #8cbc00;
+    background-color: var(--verdeOscuro);
     display: block;
-    color: #FFF;
+    color: var(--beige);
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 700;
     padding: 1rem;
     transition: background-color .3s ease-out ;
     text-align: center;
     border: none;
+    border-radius: .5rem;
     width: 100%;
 }
 .btn:hover {
-    background-color: #769c02;
+    background-color: var(--marron);
     cursor: pointer;
 }
 
@@ -113,6 +114,12 @@ img {
 
 
 /** Header y Navegacion **/
+
+@media (min-width: 768px) { 
+   
+
+}
+
 .nombre-sitio {
     
     display: flex;
@@ -121,6 +128,7 @@ img {
     margin: 0;
     color: var(--verdeOscuro);
 
+
 }
 .nombre-sitio span {
     color: var(--verdeClaro);
@@ -128,10 +136,12 @@ img {
 
 .nombre-sitio img{
 
-    max-width: 100%;
+    max-width: 12rem;
    
 
 }
+
+
 
 
 /* NAVEGACION PRINCIPAL */
@@ -258,20 +268,23 @@ div#slider figure {
 .categoria img {
     width: 100%;
     
-    border-radius:1.5rem ;
+    /* border-radius:1.5rem ; */
 
     /* border-bottom-right-radius: 0;
     border-bottom-left-radius: 0 ; */
-    /* border-top: 10rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem; */
+    /* border-top: 10rem;*/
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
 }
 .categoria a {
+    background-color: var(--verdeClaro);
     text-align: center;
     display: block;
     padding: 2rem;
     font-size: 2rem;
-    color: var(--verdeOscuro);
+    color: var(--beige);
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 
 }
 .categoria a:hover {
@@ -279,6 +292,7 @@ div#slider figure {
     color: var(--verdeOscuro);
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem ;
+    
     /* border-color: var(--verdeClaro); */
     /* border-radius: .5rem; */
  
@@ -411,6 +425,7 @@ div#slider figure {
 .producto {
     background-color: var(--verdeClaro);
     margin-bottom: 2rem;
+    align-items: center;
 }
 @media (min-width: 768px) { 
     .producto {
@@ -423,11 +438,12 @@ div#slider figure {
 
 .texto-producto {
     text-align: center;
-    color: #FFFFFF;
+    color: var(--beige);
     padding: 2rem;
 }
 .texto-producto h3 {
     margin: 0;
+   
 }
 .texto-producto p {
     margin: 0 0 .5rem 0;
@@ -574,6 +590,7 @@ div#slider figure {
 .formulario {
     max-width: 60rem;
     margin: 0 auto;
+    color: var(--verdeOscuro);
 }
 
 .formulario fieldset {
@@ -581,10 +598,10 @@ div#slider figure {
    margin-bottom: 2rem;
 }
 .formulario legend {
-    background-color: #005485;
+    background-color: var(--verdeOscuro);
     width: 100%;
     text-align: center;
-    color: #FFF;
+    color: var(--beige);
     text-transform: uppercase;
     font-weight: 900;
     padding: 1rem;
