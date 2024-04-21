@@ -27,7 +27,8 @@ body {
 /* Globales */
 h1, 
 h2, 
-h3 {
+h3,
+h4{
     font-family: 'Playfair Display', serif;
     /* margin: 0 0 2rem 0; */
 }
@@ -56,6 +57,14 @@ h3 {
         font-size: 3rem;
     }
 }
+
+@media (min-width: 768px) { 
+    h4 {
+        font-size: 2rem;
+    }
+}
+
+
 a {
     text-decoration: none;
     /* color: #000; */
@@ -64,6 +73,7 @@ a {
 
 .contenedor {
     max-width: 120rem;
+    width: 95%;
     margin: 0 auto;
  
  
@@ -312,6 +322,31 @@ div#slider figure {
     }
     
 }
+
+.informacion-servicios{
+    
+    display: flex;
+   
+    justify-content: center;
+    text-align: justify;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+
+.informacion-servicios img{
+
+
+
+    
+}
+
+
+
+
+
+
+/* FOOTER */
 .footer {
     display: flex;
     /* flex-direction:row; */
@@ -347,10 +382,11 @@ div#slider figure {
 
 @media (min-width: 768px) { 
     .sobre-nosotros {
-        background-image: linear-gradient( to right, transparent 50%, var(--verdeClaro) 50%, var(--verdeClaro) 100% ), url(../img/nosotros.jpg);
-        background-position: left center ;
+        background-image: linear-gradient( to right, transparent 49.5%, var(--verdeClaro) 50%, var(--verdeClaro) 100% ), url(../img/nosotros.jpg);
+        background-position:center;
         padding: 10rem 0;
         background-size: 100%, 160rem;
+     
     }
 }
 .sobre-nosotros-grid {
@@ -370,6 +406,7 @@ div#slider figure {
     grid-row: 2 / 3;
     color: var(--beige);
     padding: 5rem;
+    text-align: justify;
    
 }
 @media (min-width: 768px) { 
@@ -389,15 +426,16 @@ div#slider figure {
         gap: 2rem;
     }
     .producto:nth-child(1) {
-        grid-column-start: 1;
+        grid-column-start:1;
         grid-column-end: 7;
         display: grid;
         grid-template-columns: 3fr 1fr;
     }
     .producto:nth-child(1) img {
-        height: 43rem;
+        height: 100%; 
         width: 100%;
         object-fit: cover;
+     
     }
     .producto:nth-child(2) {
         grid-column-start: 1;
@@ -512,13 +550,26 @@ div#slider figure {
     grid-template-columns: 1fr 2fr;
     grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr ) );
     column-gap: 4rem;
+    align-items: center;
+    
+    
+  
 }
 
 .informacion-nosotros {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 5rem;
+    color: var(--verdeOscuro);
+    text-align: justify;
+    font-size: 2rem;
+
+
+}
+
+.informacion-nosotros h4,
+.informacion-nosotros p{
+    margin: 1rem
+
 }
 @media (min-width: 768px) { 
     .informacion-nosotros {
@@ -570,6 +621,7 @@ div#slider figure {
 .contenido-entrada-blog {
     width: 60rem;
     margin: 0 auto;
+    text-align: justify;
 }
 
 /** Galeria **/
@@ -613,8 +665,13 @@ div#slider figure {
     text-transform: uppercase;
     font-weight: 900;
     padding: 1rem;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
 
+}
+.formulario h4{
+    text-align: center;
+/*  
+    margin-bottom: 5rem; */
 }
 
 .campo {

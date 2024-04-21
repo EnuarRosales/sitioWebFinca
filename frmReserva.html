@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Reserva</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -33,61 +32,79 @@
 
     
     <main class="contenido-principal contenedor ">
-        <h2 class="text-center">Sobre Nosotros</h2>
-        
-        <div class="contenido-nosotros">
-            <div class="imagen">
-                <img src="img/nosotros.jpg" alt="Imagen nosotros" >
-            </div>
-            <div class="informacion-nosotros">
-                <h4>¡Bienvenidos a nuestro rincón de esperanza en el corazón de la naturaleza!</h4>
-                <p>Hacienda La Esperanza, es un refugio de tranquilidad y belleza en medio de la naturaleza, ha sido testigo de generaciones de sueños y esperanzas. 
-                    Hoy, hemos reinventado esta tierra centenaria con el grounding y el glamping, fusionando tradición y modernidad. 
-                    Te invitamos a ser parte de nuestra historia. Ven a Hacienda La Esperanza y sumérgete en la magia del grounding y el glamping. </p>
-            </div>
-        </div>
+    <h2 class="text-center">Reservaciones</h2>
+
+        <form class="formulario" name="Reservaciones" method="post" data-netlify="true">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input  id="nombre" type="text" placeholder="Tu Nombre" name="nombre" required >
+                </div>
+
+                <!-- <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input id="asunto" type="text" placeholder="Tu Asunto" name="asunto" required>
+                </div> -->
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" placeholder="Tu Email" name="email" required >
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Teléfono:</label>
+                    <input id="tel" type="tel" placeholder="Tu Teléfono" name="telefono" required>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha:</label>
+                    <!-- <input type="date" placeholder="Seleccione una fecha"> -->
+                    <input type="text" id="fechaInput" placeholder="Seleccione una fecha" onfocus="mostrarCalendario()" name="fecha">
+                    <script>
+                        function mostrarCalendario() {
+                        var input = document.getElementById('fechaInput');
+                        input.type = 'date';
+                        input.focus();
+                        }
+                    </script>
+                </div>
+
+                <div class="campo">
+                    <label for="hora">Hora:</label>
+                    <input type="text" id="horaInput" placeholder="Selecciona hora de llegada" onfocus="mostrarHora()" name="hora">
+                    <script>
+                        function mostrarHora() {
+                        var input = document.getElementById('horaInput');
+                        input.type = 'time';
+                        input.focus();
+                        }
+                    </script>
+                </div>
+
+                <div class="campo">
+                    <label for="planes">Planes:</label>
+                    <input list="lista_planes" id="planes" placeholder="Selecciona un plan" name="plan">
+                    <datalist id="lista_planes">
+                        <option value="Camping de Aventura"></option>
+                        <option value="Escape a Boyáca"></option>
+                        <option value="Romántico"></option>
+                    </datalist>
+                </div>
+
+              
+                <div class="campo">
+                    <label for="tel">Mensaje:</label>
+                    <textarea rows="10" cols="20" name="Mensaje"></textarea>
+                </div>
+
+            </fieldset>
+            <input class="btn" type="submit" value="Enviar Formulario" >
+        </form>
     </main>
 
-
-<img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp" onclick="window.location.href='https://wa.me/573142850922?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio'">
-
-
     <footer class="footer">
-        <!-- <div class="grid-footer contenedor">
-            <div>
-                <h3>Categorías</h3>
-
-                <nav class="footer-menu">
-                    <a href="#">Cocina</a>
-                    <a href="#">Oficina</a>
-                    <a href="#">Jardín</a>
-                    <a href="#">Cochera</a>
-                    <a href="#">Dormitorios</a>
-                </nav>
-            </div>
-
-            <div>
-                <h3>Sobre Nosotros</h3>
-                <nav class="footer-menu">
-                    <a href="#">Nuestra Historia</a>
-                    <a href="#">Misión, Visión y Valores</a>
-                    <a href="#">Carreras</a>
-                    <a href="#">Política de Privacidad</a>
-                    <a href="#">Términos del Servicio</a>
-                </nav>
-            </div>
-
-            <div>
-                <h3>Soporte</h3>
-                <nav class="footer-menu">
-                    <a href="#">Preguntas Frecuentes</a>
-                    <a href="#">Ayuda en línea</a>
-                    <a href="#">Confianza y Seguridad</a>
-                </nav>
-            </div>
-
-        </div> -->
-
         <p>Hacienda La Esperanza</p>
         <section class="iconos-redes">
 
@@ -130,6 +147,6 @@
             </div>
         </section>
     </footer>
-
+    
 </body>
 </html>
