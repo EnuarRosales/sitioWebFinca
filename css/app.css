@@ -711,4 +711,9 @@ img.btn-whatsapp:hover{
     transition-duration: 1s;
     } 
 
- 
+ /** Bloque Nosotros */
+
+ iframe.text-center{
+    display: grid;
+    place-items: center;
+ }
