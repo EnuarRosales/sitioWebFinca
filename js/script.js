@@ -1,25 +1,32 @@
-// Obtener el modal
-var modal = document.getElementById("myModal");
+ // Obtener todos los botones que abren los modales
+ var btns = document.querySelectorAll('.btn[id^="myBtn"]');
 
-// Obtener el botón que abre el modal
-var btn = document.getElementById("myBtn");
+ // Obtener todos los modales
+ var modals = document.querySelectorAll('.modal[id^="myModal"]');
 
-// Obtener el elemento <span> que cierra el modal
-var span = document.getElementsByClassName("close")[0];
+ // Obtener todos los elementos <span> que cierran los modales
+ var spans = document.querySelectorAll('.close');
 
-// Cuando el usuario hace clic en el botón, abre el modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+ // Asignar eventos a cada botón para abrir su respectivo modal
+ btns.forEach((btn, index) => {
+     btn.onclick = function() {
+         modals[index].style.display = "block";
+     }
+ });
 
-// Cuando el usuario hace clic en <span> (x), cierra el modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+ // Asignar eventos a cada <span> para cerrar su respectivo modal
+ spans.forEach((span, index) => {
+     span.onclick = function() {
+         modals[index].style.display = "none";
+     }
+ });
 
-// Cuando el usuario hace clic en cualquier lugar fuera del modal, cierra el modal
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+ // Cerrar el modal cuando se hace clic fuera de él
+ window.onclick = function(event) {
+     modals.forEach(modal => {
+         if (event.target == modal) {
+             modal.style.display = "none";
+         }
+     });
+ }
+
