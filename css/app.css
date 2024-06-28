@@ -746,7 +746,7 @@ img.btn-whatsapp:hover{
 
 .slider-container {
     position: relative;
-    max-width: 100%;
+    max-width: 70%;
     margin: auto;
     overflow: hidden;
 }
