@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,9 @@
 
 <body>
     <header>
-        <a class="nombre-sitio" href="index.html">
-            <h1> La cima <span> de los frailejones</span></h1>
-        </a>
-
+        <header>
+            <h1 class="nombre-sitio"> La cima <span> de los frailejones</span></h1>
+        </header>
     </header>
 
     <div class="contenedor-navegacion">
@@ -30,68 +29,81 @@
             <a href="lugaresInteres.html">Lugares de interes</a>
             <a href="blog.html">Frailejones</a>
             <a href="rutaCiclistica.html">Ruta ciclistica</a>
-            <a href="servicios.html">Precios y Servicios</a>     
-            <a href="contacto.html">Contacto</a>            
+            <a href="servicios.html">Precios y Servicios</a>
+            <a href="contacto.html">Contacto</a>
             <a href="ubicacion.html">Como llegar</a>
         </nav>
     </div>
 
+
     <main class="contenido-principal contenedor ">
 
-        <h2 class="text-center">Zona de cabañas</h2>
-        <article class="entrada contenido-video">
+        <h2 class="text-center">Descripción de la ruta</h2>      
 
-            <div class="entrada-blog">
-                <p>
-                    enuar Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente nisi est quia ab
-                    reprehenderit iste alias. Quas, ea quos esse, iusto obcaecati mollitia perferendis pariatur
-                    consectetur quisquam cupiditate blanditiis!Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugiat animi debitis officiis voluptas ducimus doloremque, est labore corporis iure quidem, nostrum
-                    suscipit accusantium placeat quasi fugit modi excepturi incidunt necessitatibus!
-                </p>
-                <iframe width="1292" height="727" src="https://www.youtube.com/embed/SyZ4eSGbiQQ" title="Cabaña"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        <article class="entrada contenido-entrada-img">
+            <div class="imagen">
+                <img src="img/RUTA-CICLISTICA/infoTecnica.png" alt="imagen blog">
             </div>
         </article>
 
-        <h2 class="text-center">Paisajes naturales</h2>
-        <article class="entrada contenido-video">
-            <div class="entrada-blog">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente nisi est quia ab
-                    reprehenderit
-                    iste alias. Quas, ea quos esse, iusto obcaecati mollitia perferendis pariatur consectetur quisquam
-                    cupiditate blanditiis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi debitis
-                    officiis voluptas ducimus doloremque, est labore corporis iure quidem, nostrum suscipit accusantium
-                    placeat quasi fugit modi excepturi incidunt necessitatibus!
-                </p>
-                <iframe width="1292" height="727" src="https://www.youtube.com/embed/zOoJ9hM2SZc" title="Cabana-interna"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section class="contenedor-blog">
+            <div class="blog">
+                <article class="entrada">
+                    <h3 class="text-center">Ruta</h3>
+                    <div class="imagen">
+                        <img src="img/RUTA-CICLISTICA/rutaCiclistica.png" alt="imagen blog">
+                    </div>
+                    <div class="contenido-blog">
+                        <div class="entrada-blog">
+                            
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <aside>
+                <h3 class="text-center">Caracteristicas</h3>
+                <div class="contenido-blog">
+                    <div class="entrada-blog">
+                        <p>La provincia de Sugamuxi, una de las regiones más prósperas del centro del país, es una
+                            tierra que rinden homenaje a los héroes de la gesta libertador; el recorrido está lleno de
+                            historia y de desafíos recomendados para el ciclista, como el Alto de Curíes, una tierra
+                            llena de encanto natural, adornada por el cañón y Río Chicamocha.
+
+                            Este recorrido, ofrece la posibilidad de una experiencia de relajación y salud visitando los
+                            termales de Iza, continuando con el mágico paisaje del Lago de Tota, embalse de agua dulce
+                            natural más grande de Colombia, y Playa Blanca, donde la arena, los muelles rústicos y la
+                            enorme laguna recrean un pequeño paraíso costero en la tierra de la libertad.
+
+                            Esta ruta ofrece al bici turista una dulce experiencia gastronómica en la que se resalta a
+                            Tibasosa “tierra de feijoa”, con colores y sabores novedosos; e Iza en donde se encuentra en
+                            la plaza principal gran variedad de tradicionales postres. En diferentes puntos del
+                            recorrido se pueden degustar las preparaciones con Trucha.
+
+                            Créditos a: <a
+                                href="https://biciregion.regioncentralrape.gov.co/rutas/ruta-caminos-de-arcilla/"
+                                class="">https://biciregion.regioncentralrape.gov.co/rutas/ruta-caminos-de-arcilla/</a>
+                        </p>
+                    </div>
+                </div>
+            </aside>            
+
+            <!-- <article class="entrada contenido-entrada-img">
+                <div class="imagen">
+                    <img src="img/RUTA-CICLISTICA/rutaCiclistica2.png" alt="imagen blog">
+                </div>
+            </article> -->
+
+        </section>
+
+        <article class="entrada contenido-entrada-img">
+            <div class="imagen">
+                <img src="img/RUTA-CICLISTICA/rutaCiclistica2.png" alt="imagen blog">
             </div>
         </article>
-        <h2 class="text-center">Zonas pet friendly</h2>
-        <article class="entrada contenido-video">
-            <div class="entrada-blog">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente nisi est quia ab
-                    reprehenderit
-                    iste alias. Quas, ea quos esse, iusto obcaecati mollitia perferendis pariatur consectetur quisquam
-                    cupiditate blanditiis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi debitis
-                    officiis voluptas ducimus doloremque, est labore corporis iure quidem, nostrum suscipit accusantium
-                    placeat quasi fugit modi excepturi incidunt necessitatibus!
-                </p>
-                <iframe width="1292" height="727" src="https://www.youtube.com/embed/DveaVmp_J1Q" title="PeTfriendly"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </article>
+        
     </main>
+
 
 
     <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp"
@@ -134,7 +146,9 @@
 
         </div> -->
 
-        <p>Hacienda La Esperanza</p>
+
+
+
         <section class="iconos-redes">
 
 
